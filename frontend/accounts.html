@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Accounts | BankPro</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/accounts.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <a href="dashboard.html" class="logo">
+                <span class="logo-icon">₿</span>
+                BankPro
+            </a>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link">
+                📊 <span>Dashboard</span>
+            </a>
+
+            <a href="customers.html" class="nav-link">
+                👥 <span>Customers</span>
+            </a>
+
+            <a href="accounts.html"
+               class="nav-link active">
+                💳 <span>Accounts</span>
+            </a>
+
+            <a href="transactions.html" class="nav-link">
+                💰 <span>Transactions</span>
+            </a>
+
+            <a href="transfer.html" class="nav-link">
+                🔄 <span>Transfer</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html"
+               class="nav-link logout">
+                🚪 <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    onclick="toggleSidebar()">
+                ☰
+            </button>
+
+            <div>
+
+                <h2>Accounts</h2>
+
+                <p>
+                    Manage bank accounts
+                </p>
+
+            </div>
+
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin User</strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="page-content">
+
+            <div class="page-actions">
+
+                <div>
+
+                    <h1>
+                        Account Management
+                    </h1>
+
+                    <p>
+                        Manage all customer bank accounts.
+                    </p>
+
+                </div>
+
+                <button class="btn btn-primary">
+                    + Create Account
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        💳
+                    </div>
+
+                    <div>
+                        <span>Total Accounts</span>
+                        <h2>1,890</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        🏦
+                    </div>
+
+                    <div>
+                        <span>Savings Accounts</span>
+                        <h2>1,120</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        💼
+                    </div>
+
+                    <div>
+                        <span>Current Accounts</span>
+                        <h2>770</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="content-card">
+
+                <div class="toolbar">
+
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search account..."
+                    >
+
+                    <select>
+
+                        <option>
+                            All Account Types
+                        </option>
+
+                        <option>
+                            Savings
+                        </option>
+
+                        <option>
+                            Current
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Account No.</th>
+                                <th>Customer</th>
+                                <th>Type</th>
+                                <th>Balance</th>
+                                <th>Status</th>
+                                <th>Created</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    ACC-10021
+                                </td>
+
+                                <td>
+                                    Rahim Ahmed
+                                </td>
+
+                                <td>
+                                    Savings
+                                </td>
+
+                                <td>
+                                    ৳125,000
+                                </td>
+
+                                <td>
+                                    <span class="status success">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    10 Jan 2026
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    ACC-10045
+                                </td>
+
+                                <td>
+                                    Karim Hasan
+                                </td>
+
+                                <td>
+                                    Current
+                                </td>
+
+                                <td>
+                                    ৳250,500
+                                </td>
+
+                                <td>
+                                    <span class="status success">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    15 Feb 2026
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    ACC-10067
+                                </td>
+
+                                <td>
+                                    Nusrat Jahan
+                                </td>
+
+                                <td>
+                                    Savings
+                                </td>
+
+                                <td>
+                                    ৳75,000
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    20 Mar 2026
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Transfer | BankPro</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/transfer.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <a href="dashboard.html" class="logo">
+                <span class="logo-icon">₿</span>
+                BankPro
+            </a>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link">
+                📊 <span>Dashboard</span>
+            </a>
+
+            <a href="customers.html" class="nav-link">
+                👥 <span>Customers</span>
+            </a>
+
+            <a href="accounts.html" class="nav-link">
+                💳 <span>Accounts</span>
+            </a>
+
+            <a href="transactions.html" class="nav-link">
+                💰 <span>Transactions</span>
+            </a>
+
+            <a href="transfer.html"
+               class="nav-link active">
+                🔄 <span>Transfer</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html"
+               class="nav-link logout">
+                🚪 <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    onclick="toggleSidebar()">
+                ☰
+            </button>
+
+            <div>
+
+                <h2>Money Transfer</h2>
+
+                <p>
+                    Transfer money between accounts
+                </p>
+
+            </div>
+
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin User</strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="page-content">
+
+            <div class="page-actions">
+
+                <div>
+
+                    <h1>
+                        Transfer Money
+                    </h1>
+
+                    <p>
+                        Send money securely from one account
+                        to another.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transfer-layout">
+
+                <div class="content-card transfer-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2>
+                                New Transfer
+                            </h2>
+
+                            <p>
+                                Enter transfer information
+                            </p>
+
+                        </div>
+
+                        <span class="secure-badge">
+                            🔒 Secure
+                        </span>
+
+                    </div>
+
+
+                    <form id="transferForm">
+
+                        <div class="form-group">
+
+                            <label>
+                                From Account
+                            </label>
+
+                            <select required>
+
+                                <option value="">
+                                    Select source account
+                                </option>
+
+                                <option>
+                                    ACC-10021 — ৳125,000
+                                </option>
+
+                                <option>
+                                    ACC-10045 — ৳250,500
+                                </option>
+
+                                <option>
+                                    ACC-10067 — ৳75,000
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                To Account
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter destination account number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Transfer Amount
+                            </label>
+
+                            <div class="amount-input">
+
+                                <span>৳</span>
+
+                                <input
+                                    type="number"
+                                    placeholder="0.00"
+                                    min="1"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Transfer Note
+                            </label>
+
+                            <textarea
+                                rows="4"
+                                placeholder="Enter transfer note (optional)">
+                            </textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full">
+
+                            Confirm Transfer
+
+                        </button>
+
+
+                        <div id="transferMessage"
+                             class="form-message">
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <div class="content-card">
+
+                    <h2>
+                        Transfer Guidelines
+                    </h2>
+
+                    <div class="guideline">
+
+                        <span>✓</span>
+
+                        <p>
+                            Verify the destination account number
+                            before transferring.
+                        </p>
+
+                    </div>
+
+
+                    <div class="guideline">
+
+                        <span>✓</span>
+
+                        <p>
+                            Make sure the source account has
+                            sufficient balance.
+                        </p>
+
+                    </div>
+
+
+                    <div class="guideline">
+
+                        <span>✓</span>
+
+                        <p>
+                            Double-check the transfer amount.
+                        </p>
+
+                    </div>
+
+
+                    <div class="guideline">
+
+                        <span>✓</span>
+
+                        <p>
+                            All transfers will be recorded in
+                            transaction history.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

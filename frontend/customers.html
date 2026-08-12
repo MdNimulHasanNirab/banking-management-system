@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Customers | BankPro</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/customers.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <a href="dashboard.html" class="logo">
+                <span class="logo-icon">₿</span>
+                BankPro
+            </a>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link">
+                📊 <span>Dashboard</span>
+            </a>
+
+            <a href="customers.html"
+               class="nav-link active">
+                👥 <span>Customers</span>
+            </a>
+
+            <a href="accounts.html" class="nav-link">
+                💳 <span>Accounts</span>
+            </a>
+
+            <a href="transactions.html" class="nav-link">
+                💰 <span>Transactions</span>
+            </a>
+
+            <a href="transfer.html" class="nav-link">
+                🔄 <span>Transfer</span>
+            </a>
+
+            <p class="nav-title">SYSTEM</p>
+
+            <a href="#" class="nav-link">
+                ⚙ <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html" class="nav-link logout">
+                🚪 <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    onclick="toggleSidebar()">
+                ☰
+            </button>
+
+            <div>
+
+                <h2>Customers</h2>
+
+                <p>
+                    Manage bank customers
+                </p>
+
+            </div>
+
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin User</strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="page-content">
+
+            <div class="page-actions">
+
+                <div>
+
+                    <h1>
+                        Customer Management
+                    </h1>
+
+                    <p>
+                        View and manage all customers.
+                    </p>
+
+                </div>
+
+                <button class="btn btn-primary">
+                    + Add Customer
+                </button>
+
+            </div>
+
+
+            <div class="content-card">
+
+                <div class="toolbar">
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            placeholder="Search customer..."
+                            id="customerSearch"
+                        >
+
+                    </div>
+
+                    <select>
+
+                        <option>
+                            All Customers
+                        </option>
+
+                        <option>
+                            Active
+                        </option>
+
+                        <option>
+                            Inactive
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Customer ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Account</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>CUS-1001</td>
+
+                                <td>
+                                    Rahim Ahmed
+                                </td>
+
+                                <td>
+                                    rahim@example.com
+                                </td>
+
+                                <td>
+                                    01711-123456
+                                </td>
+
+                                <td>
+                                    ACC-10021
+                                </td>
+
+                                <td>
+                                    <span class="status success">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>CUS-1002</td>
+
+                                <td>
+                                    Karim Hasan
+                                </td>
+
+                                <td>
+                                    karim@example.com
+                                </td>
+
+                                <td>
+                                    01822-654321
+                                </td>
+
+                                <td>
+                                    ACC-10045
+                                </td>
+
+                                <td>
+                                    <span class="status success">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>CUS-1003</td>
+
+                                <td>
+                                    Nusrat Jahan
+                                </td>
+
+                                <td>
+                                    nusrat@example.com
+                                </td>
+
+                                <td>
+                                    01933-987654
+                                </td>
+
+                                <td>
+                                    ACC-10067
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>CUS-1004</td>
+
+                                <td>
+                                    Tanvir Rahman
+                                </td>
+
+                                <td>
+                                    tanvir@example.com
+                                </td>
+
+                                <td>
+                                    01644-222333
+                                </td>
+
+                                <td>
+                                    ACC-10089
+                                </td>
+
+                                <td>
+                                    <span class="status success">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="action-btn">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | BankPro</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/dashboard.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <a href="dashboard.html" class="logo">
+                <span class="logo-icon">₿</span>
+                BankPro
+            </a>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+            <a href="dashboard.html"
+               class="nav-link active">
+
+                📊
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="customers.html"
+               class="nav-link">
+
+                👥
+                <span>Customers</span>
+
+            </a>
+
+
+            <a href="accounts.html"
+               class="nav-link">
+
+                💳
+                <span>Accounts</span>
+
+            </a>
+
+
+            <a href="transactions.html"
+               class="nav-link">
+
+                💰
+                <span>Transactions</span>
+
+            </a>
+
+
+            <a href="transfer.html"
+               class="nav-link">
+
+                🔄
+                <span>Transfer</span>
+
+            </a>
+
+
+            <p class="nav-title">
+                SYSTEM
+            </p>
+
+            <a href="#" class="nav-link">
+                ⚙
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html"
+               class="nav-link logout">
+
+                🚪
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    onclick="toggleSidebar()">
+                ☰
+            </button>
+
+            <div>
+                <h2>Dashboard</h2>
+                <p>Banking system overview</p>
+            </div>
+
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin User</strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard -->
+
+        <section class="dashboard">
+
+            <div class="welcome-card">
+
+                <div>
+
+                    <span>
+                        GOOD MORNING
+                    </span>
+
+                    <h1>
+                        Welcome back, Admin!
+                    </h1>
+
+                    <p>
+                        Here's what's happening with your bank today.
+                    </p>
+
+                </div>
+
+                <div class="welcome-icon">
+                    🏦
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <span>Total Customers</span>
+
+                        <h2>1,250</h2>
+
+                        <small class="positive">
+                            ↑ 8.2% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        💳
+                    </div>
+
+                    <div>
+
+                        <span>Total Accounts</span>
+
+                        <h2>1,890</h2>
+
+                        <small class="positive">
+                            ↑ 5.4% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        💰
+                    </div>
+
+                    <div>
+
+                        <span>Total Balance</span>
+
+                        <h2>৳25.5M</h2>
+
+                        <small class="positive">
+                            ↑ 12.5% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        🔄
+                    </div>
+
+                    <div>
+
+                        <span>Transactions</span>
+
+                        <h2>15,420</h2>
+
+                        <small class="positive">
+                            ↑ 6.8% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Transactions -->
+
+            <div class="content-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Recent Transactions
+                        </h2>
+
+                        <p>
+                            Latest banking activities
+                        </p>
+
+                    </div>
+
+                    <a href="transactions.html"
+                       class="view-all">
+                        View All →
+                    </a>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Account</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>#TRX-1001</td>
+
+                                <td>ACC-10021</td>
+
+                                <td>
+                                    <span class="transaction-deposit">
+                                        Deposit
+                                    </span>
+                                </td>
+
+                                <td>+৳10,000</td>
+
+                                <td>
+                                    <span class="status success">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td>13 Aug 2026</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>#TRX-1002</td>
+
+                                <td>ACC-10045</td>
+
+                                <td>
+                                    <span class="transaction-withdraw">
+                                        Withdrawal
+                                    </span>
+                                </td>
+
+                                <td>-৳2,000</td>
+
+                                <td>
+                                    <span class="status success">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td>13 Aug 2026</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>#TRX-1003</td>
+
+                                <td>ACC-10067</td>
+
+                                <td>
+                                    <span class="transaction-transfer">
+                                        Transfer
+                                    </span>
+                                </td>
+
+                                <td>-৳5,000</td>
+
+                                <td>
+                                    <span class="status success">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td>12 Aug 2026</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>#TRX-1004</td>
+
+                                <td>ACC-10089</td>
+
+                                <td>
+                                    <span class="transaction-deposit">
+                                        Deposit
+                                    </span>
+                                </td>
+
+                                <td>+৳25,000</td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>12 Aug 2026</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
