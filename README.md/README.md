@@ -8,6 +8,12 @@ The project simulates essential banking operations such as user authentication, 
 
 ---
 
+🚀 Live Demo
+Add your deployed project link here:
+
+
+
+
 ## 📌 Project Overview
 
 The Banking Management System demonstrates how a banking application can be organized into separate frontend, backend, data, testing, and documentation layers.
@@ -608,14 +614,15 @@ This project demonstrates practical knowledge of:
 
 ---
 
-## 👨‍💻 Author
 
-## MD NIMUL HASAN {NIRAB}  #
+
+# # 👨‍💻 Developer
+MD NIMUL HASAN (NIRAB)
+         
 
 Department of Computer Science and Engineering (CSE)
 
 Bangladesh University of Business and Technology (BUBT)
-
 ---
 
 ## 📄 Disclaimer
